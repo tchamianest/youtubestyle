@@ -26,6 +26,10 @@
   top: 0;
   border-bottom: 1px solid rgb(204, 204, 204);
   background-color: rgb(255, 255, 255);
+  z-index: 100;
+
+  /* to make it always become in front of others */
+  z-index: 1;
 }
 
 .left-header {
@@ -95,3 +99,20 @@
 .youtube-logo {
   height: 30px;
 }
+
+/* notification */
+.notifications-container {
+  position: relative;
+}
+
+.notifications-count {
+  right: -5px;
+  top: -5px;
+  position: absolute;
+  background-color: rgb(175, 0, 0);
+  padding: 2px 5px 2px 5px;
+  font-size: 11px;
+  color: white;
+  border-radius: 20px;
+}
+/*  end of notification */
